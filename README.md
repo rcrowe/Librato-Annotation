@@ -11,7 +11,7 @@ I have only tested this with installation through [Composer](http://getcomposer.
 ```json
 {
     "require": {
-        "rcrowe/librato-annotation": "dev-master",
+        "rcrowe/librato-annotation": "0.1.2",
         "phing/phing": "2.4.14"
     },
     "minimum-stability": "dev"
