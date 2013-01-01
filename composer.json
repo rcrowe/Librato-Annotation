@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Librato\\Annotation": "src/"
+            "rcrowe\\Librato\\Annotation": "src/"
         }
     },
     "minimum-stability": "dev"
