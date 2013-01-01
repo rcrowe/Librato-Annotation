@@ -1,0 +1,22 @@
+{
+    "name": "rcrowe/librato-annotation",
+    "description": "Send a deployment annotation to Librato",
+    "keywords": ["phing", "librato", "deployment"],
+    "license": "BSD",
+    "authors": [
+        {
+            "name": "Rob Crowe",
+            "email": "hello@vivalacrowe.com"
+        }
+    ],
+    "require": {
+        "nesquick/metrics": "dev-master",
+        "kriswallsmith/buzz": "dev-master",
+        "phing/phing": "2.4.14"
+    },
+    "autoload": {
+        "psr-0": {
+            "Librato\\Annotation": "src/"
+        }
+    }
+}
