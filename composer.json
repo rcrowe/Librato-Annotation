@@ -18,5 +18,6 @@
         "psr-0": {
             "Librato\\Annotation": "src/"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
