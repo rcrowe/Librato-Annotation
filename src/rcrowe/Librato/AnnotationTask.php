@@ -199,25 +199,20 @@ class AnnotationTask extends Task
      */
     public function main()
     {
-        $username    = $this->getUsername();
-        $password    = $this->getPassword();
-        $name        = $this->getName();
-        $title       = $this->getTitle();
-        $description = $this->getDesc();
-
         // Build up the data we are sending to Librato
         $data = array(
-            'title'      => $title,
+            'title'      => $this->getTitle(),
             'start_time' => time(),
         );
 
+        $description = $this->getDesc();
         if ($description !== null) {
             $data['description'] = $description;
         }
 
         // Send annotation to Librato
-        $client = new Client($username, $password);
-        $result = $client->post('/annotations/'.$name, $data);
+        $client = new Client($this->getUsername(), $this->getPassword());
+        $result = $client->post('/annotations/'.$this->getName(), $data);
 
         // Did Librato accept the annotation
         if (!isset($result->errors)) {
